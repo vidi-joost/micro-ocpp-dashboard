@@ -244,7 +244,7 @@ export default function WebsocketControlPanel(props) {
                             <label>Ping Interval</label>
                         </div>
                         <div class="is-col">
-                            <input type="number" placeholder="pingInterval" value={_pingInterval} onChange={e=>_setPingInterval(e.target.value)}/>
+                            <input type="number" placeholder="pingInterval" value={_pingInterval} onChange={e=>_setPingInterval(Number(e.target.value))}/>
                         </div>
                     </div>
                     <div class="is-row is-stack-8">
@@ -252,7 +252,7 @@ export default function WebsocketControlPanel(props) {
                             <label>Reconnect Interval</label>
                         </div>
                         <div class="is-col">
-                            <input type="number" placeholder="reconnectInterval" value={_reconnectInterval} onChange={e=>_setReconnectInterval(e.target.value)} />
+                            <input type="number" placeholder="reconnectInterval" value={_reconnectInterval} onChange={e=>_setReconnectInterval(Number(e.target.value))} />
                         </div>
                     </div>
                     <div class="is-row is-stack-20">
