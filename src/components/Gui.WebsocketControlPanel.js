@@ -89,7 +89,7 @@ export default function WebsocketControlPanel(props) {
             authorizationKey: _authorizationKey,
             caCert: _caCert,
             pingInterval: _pingInterval,
-            reconnectingInterval: _reconnectInterval,
+            reconnectInterval: _reconnectInterval,
             dnsUrl: _dnsUrl
         }).then(
             resp => {
@@ -99,7 +99,7 @@ export default function WebsocketControlPanel(props) {
                     resp.authorizationKey === _authorizationKey &&
                     resp.caCert === _caCert &&
                     resp.pingInterval === _pingInterval &&
-                    resp.reconnectingInterval === _reconnectInterval &&
+                    resp.reconnectInterval === _reconnectInterval &&
                     resp.dnsUrl === _dnsUrl
                 ){
                     setPostSuccess(`Websocket update confirmed by the server - ${DateFormatter.fullDate(new Date())}`);
